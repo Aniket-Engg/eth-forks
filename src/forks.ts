@@ -43,4 +43,4 @@ export default {
         block: 12244000,
         year: 2021
     }
-}
+} as Record<string, Record<string, number>>
