@@ -1,1 +1,3 @@
-export const test = (name: string) => `Hello ${name}`; 
+import forks from './forks'
+
+console.log(forks)

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "files": ["lib/**/*"],
+  "files": ["dist/**/*"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
