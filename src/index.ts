@@ -9,3 +9,5 @@ export const forkWithBlock = () => {
     }
     return res
 }
+
+export const fullForkDetails = forks
