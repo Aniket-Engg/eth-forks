@@ -1,3 +1,3 @@
 import forks from './forks'
 
-console.log(forks)
+export const listOfForks = () => Object.keys(forks)
