@@ -10,4 +10,8 @@ export const forkWithBlock = () => {
     return res
 }
 
+export const forkDetailsByName = (forkName: string) => { 
+    return forks[forkName] 
+}
+
 export const fullForkDetails = forks
