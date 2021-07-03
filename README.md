@@ -28,3 +28,6 @@ import { listOfForks } from 'eth-forks'
 console.log(listOfForks())
 // ["chainstart", "homestead", "dao", "tangerineWhistle", "spuriousDragon", "byzantium", "constantinople", "petersburg", "istanbul", "muirGlacier", "berlin"]
 ```
+
+## Contribution
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Aniket-Engg/eth-forks/issues)
