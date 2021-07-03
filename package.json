@@ -1,7 +1,7 @@
 {
   "name": "eth-forks",
   "version": "1.0.0",
-  "description": "",
+  "description": "A tiny NPM package to get the details of Ethereum forks",
   "main": "index.js",
   "files": [
     "dist/**/*"
@@ -15,9 +15,14 @@
     "type": "git",
     "url": "git+https://github.com/Aniket-Engg/eth-forks.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "Ethereum",
+    "Fork",
+    "EVM",
+    "Eth"
+  ],
+  "author": "Aniket-Engg",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Aniket-Engg/eth-forks/issues"
   },
