@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "10.7.0"
+  
+cache:
+  directories:
+    - $HOME/.npm
+
+jobs:
+  include:
+    - stage: tests
+      name: "Unit tests"
+      script: 
+        - npm test
