@@ -42,5 +42,9 @@ export default {
     berlin: {
         block: 12244000,
         year: 2021
+    },
+    london: {
+        block: 12965000,
+        year: 2021
     }
 } as Record<string, Record<string, number>>
