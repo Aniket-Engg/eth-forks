@@ -15,7 +15,9 @@ export const forkDetailsbyBlockNumber = (blockNumber: number) => {
     let forkName:string = ''
     for (const fork in forks) {
         const forkBlock = forks[fork]['block']
-        if (forkBlock >= blockNumber) forkName = fork
+        if (blockNumber >= forkBlock) {
+            forkName = fork
+        }
     }
     if(forkName) res = { name: forkName, block: forks[forkName]['block'], year: forks[forkName]['year']}
     return res
