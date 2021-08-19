@@ -1,4 +1,4 @@
-import { listOfForks, forkWithBlock, forkDetailsByName, fullForkDetails } from '../src';
+import { listOfForks, forkWithBlock, forkDetailsByName, forkDetailsbyBlockNumber, fullForkDetails } from '../src';
 
 test('List of forks', () => {
   expect(listOfForks())
@@ -19,6 +19,50 @@ test('fork details by fork name', () => {
     .toStrictEqual({
         "block": 9069000,
         "year": 2019
+    });
+});
+
+test('fork details by block number', () => {
+    expect(forkDetailsbyBlockNumber(1000))
+    .toStrictEqual({
+        "name": "chainstart",
+        "block": 0,
+        "year": 2015
+    });
+
+    expect(forkDetailsbyBlockNumber(2000000))
+    .toStrictEqual({
+        "name": "dao",
+        "block": 1920000,
+        "year": 2016
+    });
+
+    expect(forkDetailsbyBlockNumber(7280000))
+    .toStrictEqual({
+        "name": "petersburg",
+        "block": 7280000,
+        "year": 2019
+    });
+
+    expect(forkDetailsbyBlockNumber(9069000))
+    .toStrictEqual({
+        "name": "istanbul",
+        "block": 9069000,
+        "year": 2019
+    });
+
+    expect(forkDetailsbyBlockNumber(10000000))
+    .toStrictEqual({
+        "name": "muirGlacier",
+        "block": 9200000,
+        "year": 2020
+    });
+
+    expect(forkDetailsbyBlockNumber(15000000))
+    .toStrictEqual({
+        "name": "london",
+        "block": 12965000,
+        "year": 2021
     });
 });
 
