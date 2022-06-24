@@ -1,6 +1,13 @@
+[![npm version](https://badge.fury.io/js/eth-forks.svg)](https://www.npmjs.com/package/eth-forks)
+[![Build status](https://travis-ci.com/Aniket-Engg/eth-forks.svg?branch=main)](https://travis-ci.com/Aniket-Engg/eth-forks)
+[![npm](https://img.shields.io/npm/dw/eth-forks.svg)](https://www.npmjs.com/package/eth-forks)
+[![npm](https://img.shields.io/npm/dt/eth-forks.svg?label=Total%20Downloads)](https://www.npmjs.com/package/eth-forks)
+![NPM](https://img.shields.io/npm/l/eth-forks.svg)
+[![Package Quality](https://npm.packagequality.com/shield/eth-forks.svg)](https://packagequality.com/#?package=eth-forks)
+
 # eth-forks
 
-A tiny NPM package to get the details of Ethereum forks happened with time.
+A tiny NPM package to get the details of Ethereum hardforks happened with time.
 
 **Note: Please cross-check this information before relying on it. If anything should be updated, please raise a Pull Request**
 
@@ -26,7 +33,7 @@ An example to get a list of forks will be as:
 import { listOfForks } from 'eth-forks'
 
 console.log(listOfForks())
-// ["chainstart", "homestead", "dao", "tangerineWhistle", "spuriousDragon", "byzantium", "constantinople", "petersburg", "istanbul", "muirGlacier", "berlin"]
+// ["chainstart", "homestead", "dao", "tangerineWhistle", "spuriousDragon", "byzantium", "constantinople", "petersburg", "istanbul", "muirGlacier", "berlin", "london", "arrowGlacier", "grayGlacier"]
 ```
 
 ## Contribution
