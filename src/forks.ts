@@ -55,4 +55,4 @@ export default {
         block: 15050000,
         year: 2022
     }
-} as Record<string, Record<string, number>>
+} as Record<string, Record<string, number> >
