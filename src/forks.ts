@@ -46,5 +46,13 @@ export default {
     london: {
         block: 12965000,
         year: 2021
+    },
+    arrowGlacier: {
+        block: 13773000,
+        year: 2021
+    },
+    grayGlacier: {
+        block: 15050000,
+        year: 2022
     }
 } as Record<string, Record<string, number>>
