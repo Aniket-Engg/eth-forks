@@ -3,14 +3,14 @@ import { listOfForks, forkWithBlock, forkDetailsByName, forkDetailsbyBlockNumber
 test('List of forks', () => {
   expect(listOfForks())
   .toStrictEqual(
-      ["chainstart", "homestead", "dao", "tangerineWhistle", "spuriousDragon", "byzantium", "constantinople", "petersburg", "istanbul", "muirGlacier", "berlin", "london"]
+      ["chainstart", "homestead", "dao", "tangerineWhistle", "spuriousDragon", "byzantium", "constantinople", "petersburg", "istanbul", "muirGlacier", "berlin", "london", "arrowGlacier", "grayGlacier"]
     );
 });
 
 test('Object: fork name as key and block number as value', () => {
     expect(forkWithBlock())
     .toStrictEqual(
-        {"berlin": 12244000, "byzantium": 4370000, "chainstart": 0, "constantinople": 7280000, "dao": 1920000, "homestead": 1150000, "istanbul": 9069000, "london": 12965000,"muirGlacier": 9200000, "petersburg": 7280000, "spuriousDragon": 2675000, "tangerineWhistle": 2463000}
+        {"arrowGlacier": 13773000, "berlin": 12244000, "byzantium": 4370000, "chainstart": 0, "constantinople": 7280000, "dao": 1920000, "grayGlacier": 15050000, "homestead": 1150000, "istanbul": 9069000, "london": 12965000,"muirGlacier": 9200000, "petersburg": 7280000, "spuriousDragon": 2675000, "tangerineWhistle": 2463000}
     );
 });
 
@@ -58,7 +58,7 @@ test('fork details by block number', () => {
         "year": 2020
     });
 
-    expect(forkDetailsbyBlockNumber(15000000))
+    expect(forkDetailsbyBlockNumber(13000000))
     .toStrictEqual({
         "name": "london",
         "block": 12965000,
@@ -69,6 +69,10 @@ test('fork details by block number', () => {
 test('Full fork details', () => {
     expect(fullForkDetails)
     .toStrictEqual({
+        "arrowGlacier": {
+            "block": 13773000,
+            "year": 2021
+        },
         "berlin": {
             "block": 12244000,
             "year": 2021,
@@ -88,6 +92,10 @@ test('Full fork details', () => {
         "dao":  {
             "block": 1920000,
             "year": 2016,
+        },
+        "grayGlacier": {
+            "block": 15050000,
+            "year": 2022
         },
         "homestead":  {
             "block": 1150000,
