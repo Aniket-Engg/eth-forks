@@ -1,6 +1,6 @@
 {
   "name": "eth-forks",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A tiny NPM package to get the details of Ethereum forks",
   "main": "index.js",
   "files": [
