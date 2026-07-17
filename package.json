@@ -1,7 +1,7 @@
 {
   "name": "eth-forks",
-  "version": "1.2.1",
-  "description": "A tiny NPM package to get the details of Ethereum forks",
+  "version": "1.3.0",
+  "description": "A tiny NPM package to get the details of Ethereum hardforks",
   "main": "dist/index.js",
   "files": [
     "dist/**/*"
