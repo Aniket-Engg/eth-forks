@@ -3,14 +3,14 @@ import { listOfForks, forkWithBlock, forkDetailsByName, forkDetailsbyBlockNumber
 test('List of forks', () => {
   expect(listOfForks())
   .toStrictEqual(
-      ["chainstart", "homestead", "dao", "tangerineWhistle", "spuriousDragon", "byzantium", "constantinople", "petersburg", "istanbul", "muirGlacier", "berlin", "london", "arrowGlacier", "grayGlacier"]
+      ["chainstart", "homestead", "dao", "tangerineWhistle", "spuriousDragon", "byzantium", "constantinople", "petersburg", "istanbul", "muirGlacier", "berlin", "london", "arrowGlacier", "grayGlacier", "paris","shanghai","cancun","prague","osaka"]
     );
 });
 
 test('Object: fork name as key and block number as value', () => {
     expect(forkWithBlock())
     .toStrictEqual(
-        {"arrowGlacier": 13773000, "berlin": 12244000, "byzantium": 4370000, "chainstart": 0, "constantinople": 7280000, "dao": 1920000, "grayGlacier": 15050000, "homestead": 1150000, "istanbul": 9069000, "london": 12965000,"muirGlacier": 9200000, "petersburg": 7280000, "spuriousDragon": 2675000, "tangerineWhistle": 2463000}
+        {"arrowGlacier": 13773000, "berlin": 12244000, "byzantium": 4370000, "cancun": 19426587, "chainstart": 0, "constantinople": 7280000, "dao": 1920000, "grayGlacier": 15050000, "homestead": 1150000, "istanbul": 9069000, "london": 12965000,"muirGlacier": 9200000, "osaka": 23935694, "paris": 15537394, "petersburg": 7280000, "prague": 22431084, "shanghai": 17034870, "spuriousDragon": 2675000, "tangerineWhistle": 2463000}
     );
 });
 
@@ -81,6 +81,10 @@ test('Full fork details', () => {
             "block": 4370000,
             "year": 2017,
         },
+        "cancun": {
+            "block": 19426587,
+            "year": 2024,
+       },
         "chainstart":  {
             "block": 0,
             "year": 2015,
@@ -112,10 +116,26 @@ test('Full fork details', () => {
         "muirGlacier":  {
             "block": 9200000,
             "year": 2020,
+         },
+        "osaka": {
+         "block": 23935694,
+         "year": 2025,
+       },
+        "paris": {
+         "block": 15537394,
+         "year": 2022,
         },
         "petersburg":  {
             "block": 7280000,
             "year": 2019,
+        },
+        "prague": {
+            "block": 22431084,
+            "year": 2025,
+       },
+        "shanghai": {
+            "block": 17034870,
+            "year": 2023,
         },
         "spuriousDragon":  {
             "block": 2675000,

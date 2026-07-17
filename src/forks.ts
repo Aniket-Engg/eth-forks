@@ -54,5 +54,25 @@ export default {
     grayGlacier: {
         block: 15050000,
         year: 2022
+    },
+    paris: {
+        block: 15537394,
+        year: 2022
+    },
+    shanghai: {
+        block: 17034870,
+        year: 2023
+    },
+    cancun: {
+        block: 19426587,
+        year: 2024
+    },
+    prague: {
+        block: 22431084,
+        year: 2025
+    },
+    osaka: {
+        block: 23935694,
+        year: 2025
     }
 } as Record<string, Record<string, number> >
